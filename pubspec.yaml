@@ -1,0 +1,62 @@
+name: weather_app
+description: A new Flutter project.
+
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=2.19.2 <3.0.0'
+
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.2
+  flutter_localizations:
+    sdk: flutter
+  #  localization: ^2.1.0
+  #  work with datetime
+  intl: ^0.17.0
+  #  code style
+  linter: ^1.27.0
+  logging: ^1.1.0
+  # work with svg pictures
+  flutter_svg: ^2.0.1
+  # http
+  dio: ^4.0.6
+  freezed_annotation: ^2.2.0
+  json_annotation: ^4.7.0
+  #  state management
+  flutter_bloc: ^7.0.1
+  #  di
+  get_it: ^7.2.0
+  equatable: ^2.0.5
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  json_serializable: ^6.5.4
+  freezed: ^2.2.0
+
+  flutter_lints: ^2.0.0
+  build_runner: ^2.3.2
+  flutter_gen_runner: ^5.0.3
+
+flutter:
+  uses-material-design: true
+  generate: true
+
+  assets:
+    - lib/src/assets/svg/
+    - lib/src/assets/png/
+    - lib/src/assets/i18n/
+  fonts:
+    - family: Livvic-Thin
+      fonts:
+        - asset: lib/src/assets/font/Livvic-Thin.ttf
+flutter_gen:
+  output: lib/src/gen/
+  style: camel-case
+  integrations:
+    flutter_svg: true
